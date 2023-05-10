@@ -19,7 +19,6 @@
     rgba(37, 99, 235, 0.54) -61.86%,
     rgba(0, 151, 178, 0.54) 98.06%
   );
-  --gra_color_3: linear-gradient(182.58deg, #2563eb 54%, #0097b2 54%);
 }
 
 * {
@@ -101,6 +100,7 @@ body {
   font-weight: 600;
   font-size: 16px;
   color: var(--color_5);
+  opacity: 0.8;
 }
 
 .auto_mynd_nav_bar li a:hover {
@@ -112,6 +112,18 @@ body {
   color: var(--color_1) !important;
   font-weight: 600;
   font-size: 16px;
+}
+.auto_mynd_nav_bar li a:after {
+  margin-top: 5px;
+  display: block;
+  content: "";
+  border-bottom: solid 2px var(--color_5);
+  transform: scaleX(0);
+  transition: transform 300ms ease-in-out;
+}
+
+.auto_mynd_nav_bar li a:hover:after {
+  transform: scaleX(1);
 }
 
 .auto_mynd_nav_item {
@@ -449,4 +461,213 @@ ul {
 
 .carousel__item__content h5:hover {
   color: var(--color_7);
+}
+
+.section_content h4 {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.animated-list li {
+  color: var(--color_5);
+  font-weight: 700;
+  font-size: 18px;
+  list-style: disc;
+}
+
+/* ----Section 3 right div----- */
+
+.section_3_right_div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.section_3_right_div img {
+  width: 80%;
+  object-fit: cover;
+  background-size: cover;
+}
+
+/* ------------------Section 4-Intelligent Document Automation----------------------- */
+.section_4 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.section_4_card {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none !important;
+  background-image: url(../images/Ellipse\ 10.png);
+  object-fit: cover;
+  background-size: cover;
+  background-position: center;
+}
+
+.section_4_card img {
+  width: 30%;
+  object-fit: cover;
+  background-size: cover;
+}
+
+.section_4_card_body {
+  text-align: center;
+}
+
+.section_4_card_body h5 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 32px;
+}
+
+.section_4_card_body p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 33px;
+}
+
+/* ------------------------------------ */
+
+body {
+  --space: 2rem;
+}
+.marquee {
+  --duration: 60s;
+  --gap: var(--space);
+  display: flex;
+  overflow: hidden;
+  user-select: none;
+  gap: var(--gap);
+}
+
+.marquee__group {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: var(--gap);
+  min-width: 100%;
+  animation: scroll var(--duration) linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .marquee__group {
+    animation-play-state: paused;
+  }
+}
+
+.marquee__group img {
+  max-width: clamp(10rem, 1rem + 28vmin, 20rem);
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+
+.marquee__group p {
+  background-image: linear-gradient(
+    75deg,
+    hsl(240deg 70% 49%) 0%,
+    hsl(253deg 70% 49%) 11%,
+    hsl(267deg 70% 49%) 22%,
+    hsl(280deg 71% 48%) 33%,
+    hsl(293deg 71% 48%) 44%,
+    hsl(307deg 71% 48%) 56%,
+    hsl(320deg 71% 48%) 67%,
+    hsl(333deg 72% 48%) 78%,
+    hsl(347deg 72% 48%) 89%,
+    hsl(0deg 73% 47%) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.marquee--borders {
+  border-block: 3px solid dodgerblue;
+  padding-block: 0.75rem;
+}
+
+.marquee--reverse .marquee__group {
+  animation-direction: reverse;
+  animation-delay: calc(var(--duration) / -2);
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(calc(-100% - var(--gap)));
+  }
+}
+
+/* --------------------------------- */
+
+h2 {
+  font-family: open sans;
+  color: #fff;
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+}
+h2:after {
+  background: #3498db;
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  -webkit-transform: skew(-9deg);
+  -moz-transform: skew(-9deg);
+  -o-transform: skew(-9deg);
+  z-index: -1;
+}
+/* ///////////// */
+
+.container_bg {
+  padding: 50px 0;
+  height: 80vh;
+  background: linear-gradient(
+    182.58deg,
+    rgba(37, 99, 235, 0.54) -61.86%,
+    rgba(0, 151, 178, 0.54) 98.06%
+  );
+}
+
+.moving_cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 20%;
+  clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+  background: #ffffff;
+  box-shadow: 0px 0px 23px rgba(0, 151, 178, 0.15);
+  /* border-radius: 20px !important; */
+}
+
+.moving_cards img {
+  width: 50%;
+  object-fit: cover;
+  background-size: cover;
+  background-position: none;
+}
+
+.moving_cards_content h5 {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 33px;
+  color: var(--color_5);
+}
+
+.moving_cards_content ul li {
+  list-style: disc;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 27px;
+  color: var(--color_2);
 }
