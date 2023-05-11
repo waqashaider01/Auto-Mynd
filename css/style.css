@@ -671,3 +671,263 @@ h2:after {
   line-height: 27px;
   color: var(--color_2);
 }
+
+/* ------------------Section 6-Why Us----------------------- */
+.section_content h6 {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.section_6_img {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.section_6_img img {
+  margin-top: 4rem;
+  width: 50%;
+  object-fit: cover;
+  background-size: cover;
+  background-position: center;
+}
+
+.section_6_card {
+  background-color: var(--color_8) !important;
+  border-radius: 10px;
+  height: 35vh;
+}
+
+.section_6_card_body h3 {
+  font-weight: 700;
+  font-size: 20px;
+  color: var(--color_7);
+}
+
+.section_6_card_body p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 33px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* ------------------Section 7-What Makes Us Different----------------------- */
+.section_7_bg {
+  background: linear-gradient(
+    182.58deg,
+    rgba(37, 99, 235, 0.054) -61.86%,
+    rgba(0, 151, 178, 0.054) 98.06%
+  );
+  border-radius: 120px;
+  padding: 70px 0;
+}
+
+.section_7_img_right {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+}
+
+.section_7_img_right img {
+  width: 60%;
+  object-fit: cover;
+  background-size: cover;
+}
+
+.section_7_img_left {
+  width: 100%;
+  display: flex;
+  justify-content: start;
+}
+
+.section_7_img_left img {
+  width: 60%;
+  object-fit: cover;
+  background-size: cover;
+}
+
+.section_7_content h3 {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 48px;
+}
+
+.section_7_content p {
+  font-weight: 400;
+  font-size: 18px;
+}
+
+/* ------------------Section 8-Ratings----------------------- */
+.section_8_bg {
+  background: linear-gradient(
+    182.58deg,
+    rgba(37, 99, 235, 0.054) -61.86%,
+    rgba(0, 151, 178, 0.054) 98.06%
+  );
+  padding: 70px 0;
+}
+
+.fa {
+  font-size: 25px;
+}
+
+.checked {
+  color: orange;
+}
+
+/* Three column layout */
+.side {
+  float: left;
+  width: 15%;
+  margin-top: 10px;
+}
+
+.middle {
+  margin-top: 10px;
+  float: left;
+  width: 70%;
+}
+
+/* Place text to the right */
+/* .right {
+  text-align: center;
+} */
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The bar container */
+.bar-container {
+  width: 100%;
+  background-color: white;
+  border-radius: 40px !important;
+}
+
+/* Individual bars */
+.bar-5 {
+  width: 90%;
+  height: 18px;
+  background: #ffc700;
+  border-radius: 40px;
+}
+.bar-4 {
+  width: 30%;
+  height: 18px;
+  background: #ffc700;
+  border-radius: 40px;
+}
+.bar-3 {
+  width: 20%;
+  height: 18px;
+  background: #ffc700;
+  border-radius: 40px;
+}
+.bar-2 {
+  width: 10%;
+  height: 18px;
+  background: #ffc700;
+  border-radius: 40px;
+}
+.bar-1 {
+  width: 8%;
+  height: 18px;
+  background: #ffc700;
+  border-radius: 40px;
+}
+
+/* Responsive layout - make the columns stack on top of each other instead of next to each other */
+@media (max-width: 400px) {
+  .side,
+  .middle {
+    width: 100%;
+  }
+  .right {
+    display: none;
+  }
+}
+
+.section_8_card {
+  background: rgba(0, 151, 178, 0.2) !important;
+  border-radius: 10px !important;
+}
+
+.card_img {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background: transparent;
+  margin-top: -60px;
+}
+
+.card_img img {
+  width: 25%;
+  object-fit: cover;
+  background-size: cover;
+  background-position: center;
+}
+
+.card_body_h5 {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #ffffff;
+  width: 15%;
+  padding: 5px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.card_body_h5 h5 {
+  margin-bottom: 0 !important;
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .card_img img {
+    width: 25%;
+  }
+
+  .card_body_h5 {
+    width: 15%;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+  .card_img img {
+    width: 35%;
+  }
+
+  .card_body_h5 {
+    width: 20%;
+  }
+}
+
+@media (max-width: 768px) {
+  .card_body_h5 {
+    position: relative;
+    top: auto;
+    right: auto;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .card_img img {
+    width: 50%;
+  }
+
+  .card_body_h5 {
+    width: 30%;
+    font-size: 12px;
+  }
+
+  .card-body {
+    padding: 1rem;
+  }
+}
