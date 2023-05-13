@@ -8,13 +8,17 @@
   --color_7: #ffffff;
   --color_8: #00768b;
 
-  --gra_color_1: linear-gradient(129.48deg,
-      rgba(37, 99, 235, 0.54) -12.95%,
-      rgba(0, 151, 178, 0.67) 95.76%);
+  --gra_color_1: linear-gradient(
+    129.48deg,
+    rgba(37, 99, 235, 0.54) -12.95%,
+    rgba(0, 151, 178, 0.67) 95.76%
+  );
 
-  --gra_color_2: linear-gradient(182.58deg,
-      rgba(37, 99, 235, 0.54) -61.86%,
-      rgba(0, 151, 178, 0.54) 98.06%);
+  --gra_color_2: linear-gradient(
+    182.58deg,
+    rgba(37, 99, 235, 0.54) -61.86%,
+    rgba(0, 151, 178, 0.54) 98.06%
+  );
 }
 
 * {
@@ -206,7 +210,7 @@ body {
   outline: none;
 }
 
-.button>span {
+.button > span {
   vertical-align: middle;
 }
 
@@ -726,7 +730,6 @@ body {
   color: white;
 }
 
-
 .industry__card__content h5 {
   font-weight: 600;
   font-size: 24px;
@@ -868,9 +871,11 @@ body {
 .container_bg {
   padding: 50px 0;
   height: auto;
-  background: linear-gradient(182.58deg,
-      rgba(37, 99, 235, 0.54) -61.86%,
-      rgba(0, 151, 178, 0.54) 98.06%);
+  background: linear-gradient(
+    182.58deg,
+    rgba(37, 99, 235, 0.54) -61.86%,
+    rgba(0, 151, 178, 0.54) 98.06%
+  );
 }
 
 .Auntomation__card {
@@ -976,9 +981,11 @@ body {
 
 /* ------------------Section 7-What Makes Us Different----------------------- */
 .section_7_bg {
-  background: linear-gradient(182.58deg,
-      rgba(37, 99, 235, 0.054) -61.86%,
-      rgba(0, 151, 178, 0.054) 98.06%);
+  background: linear-gradient(
+    182.58deg,
+    rgba(37, 99, 235, 0.054) -61.86%,
+    rgba(0, 151, 178, 0.054) 98.06%
+  );
   border-radius: 120px;
   padding: 70px 0;
 }
@@ -1020,9 +1027,11 @@ body {
 
 /* ------------------Section 8-Ratings----------------------- */
 .section_8_bg {
-  background: linear-gradient(182.58deg,
-      rgba(37, 99, 235, 0.054) -61.86%,
-      rgba(0, 151, 178, 0.054) 98.06%);
+  background: linear-gradient(
+    182.58deg,
+    rgba(37, 99, 235, 0.054) -61.86%,
+    rgba(0, 151, 178, 0.054) 98.06%
+  );
   padding: 70px 0;
 }
 
@@ -1104,7 +1113,6 @@ body {
 
 /* Responsive layout - make the columns stack on top of each other instead of next to each other */
 @media (max-width: 400px) {
-
   .side,
   .middle {
     width: 100%;
@@ -1353,8 +1361,8 @@ body {
   border: 2px solid transparent;
 }
 
-.form .group input:placeholder-shown+label,
-.form .group textarea:placeholder-shown+label {
+.form .group input:placeholder-shown + label,
+.form .group textarea:placeholder-shown + label {
   top: 10px;
   background-color: transparent;
   padding: 4px;
@@ -1365,8 +1373,8 @@ body {
   border-color: #3366cc;
 }
 
-.form .group input:focus+label,
-.form .group textarea:focus+label {
+.form .group input:focus + label,
+.form .group textarea:focus + label {
   top: -10px;
   left: 10px;
   background-color: #fff;
