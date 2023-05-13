@@ -1,3 +1,11 @@
+.fa-classic,
+.fa-regular,
+.fa-solid,
+.far,
+.fas {
+  font-family: "Font Awesome 6 Free" !important;
+}
+
 :root {
   --color_1: #000000;
   --color_2: rgba(0, 0, 0, 0.7);
@@ -8,13 +16,17 @@
   --color_7: #ffffff;
   --color_8: #00768b;
 
-  --gra_color_1: linear-gradient(129.48deg,
-      rgba(37, 99, 235, 0.54) -12.95%,
-      rgba(0, 151, 178, 0.67) 95.76%);
+  --gra_color_1: linear-gradient(
+    129.48deg,
+    rgba(37, 99, 235, 0.54) -12.95%,
+    rgba(0, 151, 178, 0.67) 95.76%
+  );
 
-  --gra_color_2: linear-gradient(182.58deg,
-      rgba(37, 99, 235, 0.54) -61.86%,
-      rgba(0, 151, 178, 0.54) 98.06%);
+  --gra_color_2: linear-gradient(
+    182.58deg,
+    rgba(37, 99, 235, 0.54) -61.86%,
+    rgba(0, 151, 178, 0.54) 98.06%
+  );
 }
 
 * {
@@ -206,7 +218,7 @@ body {
   outline: none;
 }
 
-.button>span {
+.button > span {
   vertical-align: middle;
 }
 
@@ -823,7 +835,6 @@ body {
   justify-content: center;
   align-items: center;
   border: none !important;
-
 }
 
 .img_ {
@@ -838,7 +849,6 @@ body {
   height: 80px;
   object-fit: cover;
   background-size: cover;
-
 }
 
 .section_4_card_body {
@@ -926,9 +936,11 @@ body {
 .container_bg {
   padding: 50px 0;
   height: auto;
-  background: linear-gradient(182.58deg,
-      rgba(37, 99, 235, 0.54) -61.86%,
-      rgba(0, 151, 178, 0.54) 98.06%);
+  background: linear-gradient(
+    182.58deg,
+    rgba(37, 99, 235, 0.54) -61.86%,
+    rgba(0, 151, 178, 0.54) 98.06%
+  );
 }
 
 .Auntomation__card {
@@ -1034,9 +1046,11 @@ body {
 
 /* ------------------Section 7-What Makes Us Different----------------------- */
 .section_7_bg {
-  background: linear-gradient(182.58deg,
-      rgba(37, 99, 235, 0.054) -61.86%,
-      rgba(0, 151, 178, 0.054) 98.06%);
+  background: linear-gradient(
+    182.58deg,
+    rgba(37, 99, 235, 0.054) -61.86%,
+    rgba(0, 151, 178, 0.054) 98.06%
+  );
   border-radius: 120px;
   padding: 70px 0;
 }
@@ -1078,9 +1092,11 @@ body {
 
 /* ------------------Section 8-Ratings----------------------- */
 .section_8_bg {
-  background: linear-gradient(182.58deg,
-      rgba(37, 99, 235, 0.054) -61.86%,
-      rgba(0, 151, 178, 0.054) 98.06%);
+  background: linear-gradient(
+    182.58deg,
+    rgba(37, 99, 235, 0.054) -61.86%,
+    rgba(0, 151, 178, 0.054) 98.06%
+  );
   padding: 70px 0;
 }
 
@@ -1162,7 +1178,6 @@ body {
 
 /* Responsive layout - make the columns stack on top of each other instead of next to each other */
 @media (max-width: 400px) {
-
   .side,
   .middle {
     width: 100%;
@@ -1413,8 +1428,8 @@ body {
   border: 2px solid transparent;
 }
 
-.form .group input:placeholder-shown+label,
-.form .group textarea:placeholder-shown+label {
+.form .group input:placeholder-shown + label,
+.form .group textarea:placeholder-shown + label {
   top: 10px;
   background-color: transparent;
   padding: 4px;
@@ -1425,8 +1440,8 @@ body {
   border-color: #3366cc;
 }
 
-.form .group input:focus+label,
-.form .group textarea:focus+label {
+.form .group input:focus + label,
+.form .group textarea:focus + label {
   top: -10px;
   left: 10px;
   background-color: #fff;
@@ -1519,7 +1534,7 @@ body {
   margin-left: -28px !important;
   background: #0097b2 !important;
   border-radius: 8px !important;
-  padding: 10px 20px !important;
+  padding: 15px 20px !important;
   border-color: #0097b2 !important;
 }
 
@@ -1546,4 +1561,8 @@ body {
   font-weight: 400;
   font-size: 20px;
   /* color: var(--color_1); */
+}
+
+.social_icon_img {
+  width: 30px;
 }
