@@ -83,6 +83,20 @@ function carousel() {
 
 carousel();
 
+//section 1
+
+// document.addEventListener("mousemove", parallax);
+// function parallax(e) {
+//   document.querySelectorAll(".object").forEach(function (move) {
+//     var moving_value = move.getAttribute("data-value");
+
+//     var x = (e.clientX * moving_value) / 250;
+//     var y = (e.clientY * moving_value) / 250;
+
+//     move.style.transform = "translateX(" + x + "px) translateY(" + y + "px)";
+//   });
+// }
+
 document.addEventListener("mousemove", parallax);
 function parallax(e) {
   document.querySelectorAll(".object").forEach(function (move) {
@@ -94,7 +108,6 @@ function parallax(e) {
     move.style.transform = "translateX(" + x + "px) translateY(" + y + "px)";
   });
 }
-
 //section 5
 // Get the marquee elements
 var marqueeElements = document.querySelectorAll(".marquee");

@@ -50,7 +50,7 @@ body {
 
 /* Typography and Roundedness */
 .button--text-upper {
-  letter-spacing: 2px;
+  /* letter-spacing: 2px; */
   text-transform: uppercase;
 }
 .button--text-thin {
@@ -95,6 +95,19 @@ body {
 }
 
 /* ......Header Nqav Tabs..... */
+.auto_mynd_nav_bar {
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.auto_mynd_nav_bar li {
+  margin-right: 15px;
+}
+
+.auto_mynd_nav_bar li:last-child {
+  margin-right: 0;
+}
+
 .auto_mynd_nav_bar li a {
   color: var(--color_1) !important;
   font-weight: 600;
@@ -141,6 +154,24 @@ body {
   to {
     transform: translateY(0);
     opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 992px) {
+  .auto_mynd_nav_bar {
+    margin-top: 10px;
+    margin-left: 0;
+    text-align: center;
+    white-space: nowrap;
+  }
+
+  .auto_mynd_nav_bar li {
+    display: inline-block;
+    margin: 10px 5px;
+  }
+
+  .auto_mynd_nav_bar li:last-child {
+    margin-right: 5px;
   }
 }
 
@@ -305,6 +336,7 @@ body {
 }
 
 /* ---------right div-------- */
+
 .section_1_right_div {
   position: relative;
   width: 100%;
