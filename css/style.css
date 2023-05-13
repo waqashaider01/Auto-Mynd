@@ -276,12 +276,31 @@ body {
 }
 
 .section_1_button {
+  border-radius: 5px;
+  background: var(--color_5) !important;
+  color: var(--color_7);
+  -webkit-transition: background-color 0.3s, color 0.3s;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.section_1_button:hover {
+  -webkit-transition: background-color 0.1s 0.3s, color 0.1s 0.3s;
+  transition: background-color 0.1s 0.3s, color 0.1s 0.3s;
+  color: var(--color_5);
+  background: transparent !important;
+  border: 1px solid var(--color_5);
+  -webkit-animation: anim-moema-1 0.3s forwards;
+  animation: anim-moema-1 0.3s forwards;
+}
+
+.section_1_button {
   margin: 2rem 0;
 }
 
 .section_1_button_2 {
   margin: 2rem 0;
   background: transparent;
+  color: var(--color_5);
   border: 1px solid var(--color_5);
 }
 
@@ -374,42 +393,7 @@ body {
   font-size: 32px;
 }
 
-ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.carousel {
-  position: relative;
-  overflow: hidden;
-  /* box-shadow: 5px 10px 30px rgba(255, 255, 255, 0.15); */
-  border-radius: 20px;
-  padding: 50px 0;
-}
-
-.carousel__slider {
-  position: relative;
-  display: flex;
-  align-items: center;
-  width: 100vw;
-  /* border: 2px solid #333; */
-  height: 200px;
-}
-
-.carousel__list {
-  position: absolute;
-  width: 100%;
-  /* height: 100%; */
-  top: 50%;
-  left: 0;
-  transform: translateY(-50%);
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
-
-.carousel__item {
+.industry__card {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -417,53 +401,44 @@ ul {
   height: 220px;
   filter: drop-shadow(0px 0px 10px rgba(0, 151, 178, 0.3));
   background: linear-gradient(white, white) padding-box,
-    linear-gradient(to bottom, #92b0f1, #7ed3e2) border-box;
-  border-radius: 10px;
-  border: 3px solid transparent;
+    linear-gradient(to bottom, #92b0f1, #7ed3e2) border-box !important;
+  border-radius: 20px !important;
+  border: 3px solid transparent !important;
   background-color: var(--color_7);
   cursor: pointer;
 }
 
-.carousel__item:hover {
+.industry__card:hover {
   transform: scale(1.1);
   border: none;
   font-size: 30px;
-  background: none;
+  background: none !important;
   background-color: var(--color_8) !important;
 }
 
-.carousel__item__content {
+.industry__card__content {
   width: 100%;
   text-align: center;
 }
 
-.carousel__item__content:hover {
-  width: 100%;
-  text-align: center;
-}
-
-.carousel__item__content img {
+.industry__card__content img {
   width: 50%;
   object-fit: cover;
 }
 
-.carousel__item__content img:hover {
+.industry__card__content img:hover {
   width: 50%;
   object-fit: cover;
   content: url(../images/section_2_slider/Finance\ 1.png);
 }
 
-.carousel__item__content h5 {
+.industry__card__content h5 {
   font-weight: 600;
   font-size: 24px;
   color: var(--color_5);
 }
 
-.carousel__item__content h5:hover {
-  color: var(--color_7);
-}
-
-.section_content h4 {
+.industry__card__content h4 {
   font-weight: 700;
   font-size: 20px;
 }
@@ -529,7 +504,7 @@ ul {
   line-height: 33px;
 }
 
-/* ------------------------------------ */
+/* ------------------Section 5-Moving Cards-----------------------  */
 
 body {
   --space: 2rem;
@@ -567,21 +542,7 @@ body {
 }
 
 .marquee__group p {
-  background-image: linear-gradient(
-    75deg,
-    hsl(240deg 70% 49%) 0%,
-    hsl(253deg 70% 49%) 11%,
-    hsl(267deg 70% 49%) 22%,
-    hsl(280deg 71% 48%) 33%,
-    hsl(293deg 71% 48%) 44%,
-    hsl(307deg 71% 48%) 56%,
-    hsl(320deg 71% 48%) 67%,
-    hsl(333deg 72% 48%) 78%,
-    hsl(347deg 72% 48%) 89%,
-    hsl(0deg 73% 47%) 100%
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: var(--color_2);
 }
 
 .marquee--borders {
@@ -594,6 +555,10 @@ body {
   animation-delay: calc(var(--duration) / -2);
 }
 
+.marquee:hover .marquee__group {
+  animation-play-state: paused;
+}
+
 @keyframes scroll {
   0% {
     transform: translateX(0);
@@ -604,33 +569,9 @@ body {
   }
 }
 
-/* --------------------------------- */
-
-h2 {
-  font-family: open sans;
-  color: #fff;
-  position: relative;
-  display: inline-block;
-  padding: 10px 20px;
-}
-h2:after {
-  background: #3498db;
-  position: absolute;
-  content: "";
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  -webkit-transform: skew(-9deg);
-  -moz-transform: skew(-9deg);
-  -o-transform: skew(-9deg);
-  z-index: -1;
-}
-/* ///////////// */
-
 .container_bg {
   padding: 50px 0;
-  height: 80vh;
+  height: auto;
   background: linear-gradient(
     182.58deg,
     rgba(37, 99, 235, 0.54) -61.86%,
@@ -638,38 +579,65 @@ h2:after {
   );
 }
 
-.moving_cards {
+.Auntomation__card {
+  width: 18rem !important;
+  height: 17rem;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  width: 20%;
-  clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
-  background: #ffffff;
+  background: #ffffff !important;
   box-shadow: 0px 0px 23px rgba(0, 151, 178, 0.15);
-  /* border-radius: 20px !important; */
+  border-radius: 20px !important;
+  transform: skew(-15deg);
+  overflow: hidden; /* Add this line to hide the skewed content */
+  padding: 5px 20px !important;
 }
 
-.moving_cards img {
+.Auntomation__card:hover {
+  border: 2px solid #0097b2 !important;
+}
+
+.Auntomation__card__body {
+  transform: skew(
+    15deg
+  ) !important; /* Counter skew to make the content straight */
+  padding: 0 15px !important; /* Add some padding to the card body */
+}
+
+.automation__card__img {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  transform: skew(15deg) !important;
+  margin-right: 1rem;
+}
+
+.automation__card__img img {
   width: 50%;
   object-fit: cover;
   background-size: cover;
   background-position: none;
 }
 
-.moving_cards_content h5 {
+.Auntomation__card__body h5 {
   font-weight: 600;
   font-size: 20px;
   line-height: 33px;
   color: var(--color_5);
+  /* display: flex; */
+  justify-content: center;
+  margin-left: 2rem;
 }
 
-.moving_cards_content ul li {
+.Auntomation__card__body ul li {
   list-style: disc;
   font-weight: 400;
   font-size: 16px;
   line-height: 27px;
   color: var(--color_2);
+  text-align: left;
 }
 
 /* ------------------Section 6-Why Us----------------------- */
@@ -686,7 +654,7 @@ h2:after {
 
 .section_6_img img {
   margin-top: 4rem;
-  width: 50%;
+  width: 100%;
   object-fit: cover;
   background-size: cover;
   background-position: center;
@@ -851,6 +819,7 @@ h2:after {
 }
 
 .section_8_card {
+  margin-top: 3rem;
   background: rgba(0, 151, 178, 0.2) !important;
   border-radius: 10px !important;
 }
@@ -885,6 +854,8 @@ h2:after {
 
 .card_body_h5 h5 {
   margin-bottom: 0 !important;
+  font-weight: 700;
+  font-size: 24px;
 }
 
 @media (min-width: 768px) and (max-width: 992px) {
@@ -930,4 +901,292 @@ h2:after {
   .card-body {
     padding: 1rem;
   }
+}
+
+/* --------------------Image Slider------------------ */
+.slider__card__1 {
+  box-shadow: 0px 4px 16px rgba(0, 151, 178, 0.19);
+  border-radius: 10px !important;
+  border: none !important;
+}
+
+.slider__col h5 {
+  text-align: center;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.slider__card {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background: transparent;
+  padding: 10px 0;
+}
+
+.slider__card img {
+  width: 50%;
+  height: 50%;
+  /* object-fit: cover; */
+  background-size: cover;
+  /* background-position: top; */
+}
+
+.card__body__h5 {
+  margin: 20px;
+  padding: 5px;
+  border-radius: 50px;
+  background: rgba(0, 151, 178, 0.2);
+}
+
+.card__body__h5 h5 {
+  margin-bottom: 0 !important;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.card__body {
+  text-align: justify;
+  display: flex;
+  justify-content: center;
+  align-items: center !important;
+}
+
+/* ------------------Section 9-FAQs----------------------- */
+
+.accordion__item {
+  border: none !important;
+}
+
+.accordion__button {
+  font-weight: 700;
+  font-size: 20px !important;
+}
+
+.accordion__button:focus {
+  box-shadow: none !important;
+}
+
+.accordion__button::after {
+  margin-left: 30px !important;
+}
+
+.accordion__item h2:after {
+  background: none !important;
+}
+
+.accordion__button:not(.collapsed) {
+  color: var(--color_1) !important;
+  background: none !important;
+  box-shadow: none !important;
+}
+
+.accordion__button:not(.collapsed)::after {
+  background-image: url(../images/download.svg) !important;
+  transform: rotate(-180deg);
+}
+
+/* ------------------Section 10-Contact US----------------------- */
+
+.contact_us_bg {
+  background: rgba(0, 151, 178, 0.05);
+}
+
+.contact_us_h3 {
+  text-align: center;
+  color: var(--color_1);
+  font-weight: 700;
+  font-size: 32px;
+  /* margin-top: 5rem; */
+}
+
+.contact__us__card {
+  background: transparent !important;
+  border-radius: 0 !important;
+  padding: 20px;
+  /* width: 350px; */
+  display: flex;
+  flex-direction: column;
+  border: none !important;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.form {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.group {
+  position: relative;
+}
+
+.form .group label {
+  font-size: 14px;
+  color: rgb(99, 102, 102);
+  position: absolute;
+  top: -10px;
+  left: 10px;
+  background-color: #fff;
+  transition: all 0.3s ease;
+}
+
+.form .group input,
+.form .group textarea {
+  padding: 10px;
+  /* border-radius: 5px; */
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+  outline: 0;
+  width: 100%;
+  /* background-color: transparent; */
+  background: #ffffff;
+  /* box-shadow: 0px 4px 14px rgba(0, 151, 178, 0.25); */
+  border-radius: 10px;
+  filter: drop-shadow(0px 0px 10px rgba(0, 151, 178, 0.3));
+  background: linear-gradient(white, white) padding-box,
+    linear-gradient(to bottom, #92b0f1, #7ed3e2) border-box;
+  border-radius: 10px;
+  border: 2px solid transparent;
+}
+
+.form .group input:placeholder-shown + label,
+.form .group textarea:placeholder-shown + label {
+  top: 10px;
+  background-color: transparent;
+  padding: 4px;
+}
+
+.form .group input:focus,
+.form .group textarea:focus {
+  border-color: #3366cc;
+}
+
+.form .group input:focus + label,
+.form .group textarea:focus + label {
+  top: -10px;
+  left: 10px;
+  background-color: #fff;
+  color: #3366cc;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.form .group textarea {
+  resize: none;
+  height: 100px;
+}
+
+/* .form button {
+  background-color: #3366cc;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.form button:hover {
+  background-color: #27408b;
+} */
+
+.form__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.p_term_n_condition a {
+  text-decoration: none;
+  color: #003566;
+}
+
+/* ------------------Section 11-Discover----------------------- */
+
+.carousel__content h4 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 53px;
+  text-align: center;
+}
+
+/* -----------------------Website Footer--------------------------- */
+
+.footer_bg {
+  background: rgba(0, 151, 178, 0.3);
+}
+
+.footer_content h3 {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.footer_content ul li a {
+  text-decoration: none;
+  color: var(--color_1);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: 0.5px;
+}
+
+.footer__col {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-top: 5rem;
+}
+
+.footer__p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  letter-spacing: 0.5px;
+}
+
+.search__form__control {
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 15px !important;
+}
+
+.search__button {
+  margin-left: -28px !important;
+  background: #0097b2 !important;
+  border-radius: 8px !important;
+  padding: 10px 20px !important;
+  border-color: #0097b2 !important;
+}
+
+.footer__search__field {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start !important;
+  justify-content: end;
+}
+
+.footer_col_2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer_col_2 p {
+  font-weight: 400;
+  font-size: 20px;
+  color: var(--color_1);
+}
+
+.footer_col_2 i {
+  font-weight: 400;
+  font-size: 20px;
+  /* color: var(--color_1); */
 }

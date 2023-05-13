@@ -94,3 +94,24 @@ function parallax(e) {
     move.style.transform = "translateX(" + x + "px) translateY(" + y + "px)";
   });
 }
+
+//section 5
+// Get the marquee elements
+var marqueeElements = document.querySelectorAll(".marquee");
+
+// Function to start the marquee animation
+function startMarquee() {
+  marqueeElements.forEach(function (marquee) {
+    marquee.style.animationPlayState = "running";
+  });
+}
+
+// Function to stop the marquee animation
+function stopMarquee(event) {
+  var targetMarquee = event.target.closest(".marquee");
+  marqueeElements.forEach(function (marquee) {
+    if (marquee !== targetMarquee) {
+      marquee.style.animationPlayState = "paused";
+    }
+  });
+}
