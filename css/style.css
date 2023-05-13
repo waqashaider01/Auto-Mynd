@@ -722,10 +722,45 @@ body {
   object-fit: cover;
 }
 
-.industry__card:hover .industry__card__content img {
+.industry__card:hover .industry__card__content .img1 {
   content: url(../images/section_2_slider/Finance\ 1.png);
 }
 
+.industry__card:hover .industry__card__content .img2 {
+  content: url(../images/section_2_slider/Retail1.png);
+}
+
+.industry__card:hover .industry__card__content .img3 {
+  content: url(../images/section_2_slider/manufacture1.png);
+}
+
+.industry__card:hover .industry__card__content .img4 {
+  content: url(../images/section_2_slider/tech1.png);
+}
+
+.industry__card:hover .industry__card__content .img5 {
+  content: url(../images/section_2_slider/Insurance1.png);
+}
+
+.industry__card:hover .industry__card__content .img6 {
+  content: url(../images/section_2_slider/Telecom1.png);
+}
+
+.industry__card:hover .industry__card__content .img7 {
+  content: url(../images/section_2_slider/Real\ estate1.png);
+}
+
+.industry__card:hover .industry__card__content .img8 {
+  content: url(../images/section_2_slider/shipping.png);
+}
+
+.industry__card:hover .industry__card__content .img9 {
+  content: url(../images/section_2_slider/logistics1.png);
+}
+
+.industry__card:hover .industry__card__content .img10 {
+  content: url(../images/section_2_slider/Finance\ 1.png);
+}
 .industry__card:hover .industry__card__content h5 {
   color: white;
 }
@@ -748,6 +783,13 @@ body {
   list-style: disc;
 }
 
+/* ------------------Section 3-About Us---------------------- */
+
+.section_content h4 {
+  font-weight: 700;
+  font-size: 27px;
+}
+
 /* ----Section 3 right div----- */
 
 .section_3_right_div {
@@ -760,6 +802,16 @@ body {
   width: 80%;
   object-fit: cover;
   background-size: cover;
+}
+
+@media only screen and (max-width: 768px) {
+  .section_content h4 {
+    font-size: 24px;
+  }
+
+  .section_3_right_div {
+    width: 100%;
+  }
 }
 
 /* ------------------Section 4-Intelligent Document Automation----------------------- */
@@ -963,7 +1015,7 @@ body {
 .section_6_card {
   background-color: var(--color_8) !important;
   border-radius: 10px;
-  height: 35vh;
+  height: 30vh;
 }
 
 .section_6_card_body h3 {
@@ -977,6 +1029,12 @@ body {
   font-size: 18px;
   line-height: 33px;
   color: rgba(255, 255, 255, 0.7);
+}
+
+@media only screen and (max-width: 1024px) {
+  .section_6_card {
+    height: 40vh;
+  }
 }
 
 /* ------------------Section 7-What Makes Us Different----------------------- */
@@ -1331,9 +1389,6 @@ body {
 .group {
   position: relative;
 }
-
-
-
 
 .form .group label {
   font-size: 14px;
