@@ -68,7 +68,7 @@
 
     <section>
         <!-- ------------------Section 1-Power of Automation----------------------- -->
-        <div class="container mt-0 mt-sm-6">
+        <div class="container mt-6 mt-sm-0">
             <div class="row">
                 <div class="col-md-6 col-sm-12 mt-4">
                     <div class="section_content">
@@ -105,6 +105,20 @@
                         <img src="images/Managment.png" class="object img7" data-value="5" alt="" />
                         <img src="images/Backup-and-Sync.png" class="object img8" data-value="5" alt="" />
                     </div>
+                    <script>
+                        function parallax(e) {
+                            document.querySelectorAll(".object").forEach(function (move) {
+                                var moving_value = move.getAttribute("data-value");
+
+                                var x = (e.clientX * moving_value) / 250;
+                                var y = (e.clientY * moving_value) / 250;
+
+                                move.style.transform = "translateX(" + x + "px) translateY(" + y + "px)";
+                            });
+                        }
+
+                        document.addEventListener("mousemove", parallax);
+                    </script>
                     <div>
 
                     </div>
