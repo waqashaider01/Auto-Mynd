@@ -424,16 +424,16 @@ body {
     width: 32%;
     height: 50%;
     top: -50px;
-    left: 100px;
+    left: 91px;
     object-fit: contain;
   }
 
   .section_1_right_div .img2 {
     position: absolute;
-    width: 32%;
+    width: 31%;
     height: 50%;
     top: -50px;
-    left: 250px;
+    left: 234px;
     object-fit: contain;
   }
 
@@ -448,10 +448,10 @@ body {
 
   .section_1_right_div .img4 {
     position: absolute;
-    width: 32%;
+    width: 35%;
     height: 50%;
     top: 35px;
-    left: 180px;
+    left: 157px;
     object-fit: contain;
   }
 
@@ -460,7 +460,7 @@ body {
     width: 34%;
     height: 50%;
     top: 40px;
-    left: 330px;
+    left: 298px;
     object-fit: contain;
   }
 
@@ -478,7 +478,7 @@ body {
     width: 32%;
     height: 50%;
     top: 130px;
-    left: 250px;
+    left: 234px;
     object-fit: contain;
   }
   .section_1_right_div .img8 {
@@ -486,7 +486,171 @@ body {
     width: 32%;
     height: 50%;
     top: 220px;
-    left: 180px;
+    left: 161px;
+    object-fit: contain;
+  }
+}
+
+.section_content h1 {
+  font-size: 30px;
+}
+@media only screen and (max-width: 992px) and (min-width: 768px) {
+  .section_content h1 {
+    font-size: 30px;
+  }
+
+  .section_1_right_div .img1 {
+    position: absolute;
+    width: 37%;
+    height: 50%;
+    top: -27px;
+    left: 56px;
+    object-fit: contain;
+  }
+
+  .section_1_right_div .img2 {
+    position: absolute;
+    width: 36%;
+    height: 50%;
+    top: -29px;
+    left: 174px;
+    object-fit: contain;
+  }
+
+  .section_1_right_div .img3 {
+    position: absolute;
+    width: 32%;
+    height: 50%;
+    top: 59px;
+    left: 10px;
+    object-fit: contain;
+  }
+
+  .section_1_right_div .img4 {
+    position: absolute;
+    width: 34%;
+    height: 50%;
+    top: 59px;
+    left: 110px;
+    object-fit: contain;
+  }
+
+  .section_1_right_div .img5 {
+    position: absolute;
+    width: 34%;
+    height: 50%;
+    top: 60px;
+    left: 212px;
+    object-fit: contain;
+  }
+
+  .section_1_right_div .img6 {
+    position: absolute;
+    width: 36%;
+    height: 50%;
+    top: 143px;
+    left: 58px;
+    object-fit: contain;
+  }
+
+  .section_1_right_div .img7 {
+    position: absolute;
+    width: 36%;
+    height: 50%;
+    top: 143px;
+    left: 173px;
+    object-fit: contain;
+  }
+  .section_1_right_div .img8 {
+    position: absolute;
+    width: 36%;
+    height: 50%;
+    top: 216px;
+    left: 120px;
+    object-fit: contain;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .section_content p {
+    text-align: justify;
+  }
+
+  .buttons_div {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .section_1_right_div .img1 {
+    position: absolute;
+    width: 30%;
+    height: 50%;
+    top: -27px;
+    left: 89px;
+    object-fit: contain;
+  }
+
+  .section_1_right_div .img2 {
+    position: absolute;
+    width: 30%;
+    height: 50%;
+    top: -29px;
+    left: 263px;
+    object-fit: contain;
+  }
+
+  .section_1_right_div .img3 {
+    position: absolute;
+    width: 30%;
+    height: 50%;
+    top: 59px;
+    left: 10px;
+    object-fit: contain;
+  }
+
+  .section_1_right_div .img4 {
+    position: absolute;
+    width: 30%;
+    height: 50%;
+    top: 59px;
+    left: 164px;
+    object-fit: contain;
+  }
+
+  .section_1_right_div .img5 {
+    position: absolute;
+    width: 30%;
+    height: 50%;
+    top: 60px;
+    left: 316px;
+    object-fit: contain;
+  }
+
+  .section_1_right_div .img6 {
+    position: absolute;
+    width: 30%;
+    height: 50%;
+    top: 143px;
+    left: 58px;
+    object-fit: contain;
+  }
+
+  .section_1_right_div .img7 {
+    position: absolute;
+    width: 30%;
+    height: 50%;
+    top: 143px;
+    left: 214px;
+    object-fit: contain;
+  }
+  .section_1_right_div .img8 {
+    position: absolute;
+    width: 30%;
+    height: 50%;
+    top: 232px;
+    left: 141px;
     object-fit: contain;
   }
 }
