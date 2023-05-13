@@ -1332,19 +1332,24 @@ body {
   position: relative;
 }
 
+
+
+
 .form .group label {
   font-size: 14px;
+  border-radius: 6px;
   color: rgb(99, 102, 102);
   position: absolute;
+  padding: 2px;
   top: -10px;
-  left: 10px;
+  left: 20px !important;
   background-color: #fff;
   transition: all 0.3s ease;
 }
 
 .form .group input,
 .form .group textarea {
-  padding: 10px;
+  padding: 8px;
   /* border-radius: 5px; */
   border: 1px solid rgba(0, 0, 0, 0.2);
   margin-bottom: 20px;
