@@ -346,6 +346,7 @@ body {
   align-items: center;
   overflow: hidden;
 }
+
 .section_1_right_div .img1 {
   position: absolute;
   width: 30%;
@@ -415,6 +416,79 @@ body {
   top: 220px;
   left: 180px;
   object-fit: contain;
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 992px) {
+  .section_1_right_div .img1 {
+    position: absolute;
+    width: 32%;
+    height: 50%;
+    top: -50px;
+    left: 100px;
+    object-fit: contain;
+  }
+
+  .section_1_right_div .img2 {
+    position: absolute;
+    width: 32%;
+    height: 50%;
+    top: -50px;
+    left: 250px;
+    object-fit: contain;
+  }
+
+  .section_1_right_div .img3 {
+    position: absolute;
+    width: 32%;
+    height: 50%;
+    top: 40px;
+    left: 20px;
+    object-fit: contain;
+  }
+
+  .section_1_right_div .img4 {
+    position: absolute;
+    width: 32%;
+    height: 50%;
+    top: 35px;
+    left: 180px;
+    object-fit: contain;
+  }
+
+  .section_1_right_div .img5 {
+    position: absolute;
+    width: 34%;
+    height: 50%;
+    top: 40px;
+    left: 330px;
+    object-fit: contain;
+  }
+
+  .section_1_right_div .img6 {
+    position: absolute;
+    width: 32%;
+    height: 50%;
+    top: 130px;
+    left: 100px;
+    object-fit: contain;
+  }
+
+  .section_1_right_div .img7 {
+    position: absolute;
+    width: 32%;
+    height: 50%;
+    top: 130px;
+    left: 250px;
+    object-fit: contain;
+  }
+  .section_1_right_div .img8 {
+    position: absolute;
+    width: 32%;
+    height: 50%;
+    top: 220px;
+    left: 180px;
+    object-fit: contain;
+  }
 }
 
 /* ----------------------Section 2-Industries--------------------------- */
