@@ -118,3 +118,5 @@ function stopMarquee(event) {
     }
   });
 }
+
+// ###########Scorlling Aniimation####################
