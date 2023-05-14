@@ -22,7 +22,7 @@ function isElementInViewport(el) {
 }
 
 if (window.addEventListener) {
-  addEventListener("DOMContentLoaded", checkForVisibility, false);
-  addEventListener("load", checkForVisibility, false);
+  addEventListener("DOMContentLoaded", checkForVisibility, true);
+  addEventListener("load", checkForVisibility, true);
   addEventListener("scroll", checkForVisibility, true);
 }

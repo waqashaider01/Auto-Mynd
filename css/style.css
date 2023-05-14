@@ -230,7 +230,7 @@ body {
 }
 
 @media only screen and (max-width: 500px) {
-  .button{
+  .button {
     min-width: 120px;
   }
 }
@@ -857,6 +857,10 @@ body {
   justify-content: center;
   align-items: center;
   border: none !important;
+}
+
+.mb-4rem{
+  margin-bottom: 4rem;
 }
 
 .img_ {
@@ -1595,11 +1599,18 @@ body {
 
 .header {
   opacity: 0;
-  transform: translateY(10px);
-  transition: all 1.2s ease-out;
+  transform: translateY(30px);
+  transition: all 0.7s ease-out;
 }
 
 .headerVisible {
   opacity: 1;
-  transform: translateY(0px);
+  transform: translateY(0);
+}
+
+@media (max-width: 991px) {
+  .header {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
