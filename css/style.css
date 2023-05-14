@@ -16,13 +16,17 @@
   --color_7: #ffffff;
   --color_8: #00768b;
 
-  --gra_color_1: linear-gradient(129.48deg,
-      rgba(37, 99, 235, 0.54) -12.95%,
-      rgba(0, 151, 178, 0.67) 95.76%);
+  --gra_color_1: linear-gradient(
+    129.48deg,
+    rgba(37, 99, 235, 0.54) -12.95%,
+    rgba(0, 151, 178, 0.67) 95.76%
+  );
 
-  --gra_color_2: linear-gradient(182.58deg,
-      rgba(37, 99, 235, 0.54) -61.86%,
-      rgba(0, 151, 178, 0.54) 98.06%);
+  --gra_color_2: linear-gradient(
+    182.58deg,
+    rgba(37, 99, 235, 0.54) -61.86%,
+    rgba(0, 151, 178, 0.54) 98.06%
+  );
 }
 
 * {
@@ -49,10 +53,7 @@ body {
   .mt-5rem {
     margin-top: 2rem;
   }
-
 }
-
-
 
 /* Sizes */
 .button--size-s {
@@ -235,12 +236,11 @@ body {
   }
 }
 
-
 .button:focus {
   outline: none;
 }
 
-.button>span {
+.button > span {
   vertical-align: middle;
 }
 
@@ -1037,9 +1037,11 @@ body {
 .container_bg {
   padding: 50px 0;
   height: auto;
-  background: linear-gradient(182.58deg,
-      rgba(37, 99, 235, 0.54) -61.86%,
-      rgba(0, 151, 178, 0.54) 98.06%);
+  background: linear-gradient(
+    182.58deg,
+    rgba(37, 99, 235, 0.54) -61.86%,
+    rgba(0, 151, 178, 0.54) 98.06%
+  );
 }
 
 .Auntomation__card {
@@ -1125,29 +1127,37 @@ body {
 }
 
 .section_6_card {
-  background-color: var(--color_8) !important;
+  background: linear-gradient(
+    182.58deg,
+    rgba(37, 99, 235, 0.54) -61.86%,
+    rgba(0, 151, 178, 0.54) 98.06%
+  );
+  box-shadow: 7px 9px 19px rgba(0, 151, 178, 0.2);
   border-radius: 10px;
+  /* border-radius: 10px; */
   height: 230px;
 }
 
 .section_6_card_body h3 {
   font-weight: 700;
   font-size: 20px;
-  color: var(--color_7);
+  color: var(--color_1);
 }
 
 .section_6_card_body p {
   font-weight: 400;
   font-size: 18px;
   line-height: 33px;
-  color: rgba(255, 255, 255, 0.7);
+  color: var(--color_1);
 }
 
 /* ------------------Section 7-What Makes Us Different----------------------- */
 .section_7_bg {
-  background: linear-gradient(182.58deg,
-      rgba(37, 99, 235, 0.054) -61.86%,
-      rgba(0, 151, 178, 0.054) 98.06%);
+  background: linear-gradient(
+    182.58deg,
+    rgba(37, 99, 235, 0.054) -61.86%,
+    rgba(0, 151, 178, 0.054) 98.06%
+  );
   border-radius: 120px;
   padding: 70px 0;
 }
@@ -1189,9 +1199,11 @@ body {
 
 /* ------------------Section 8-Ratings----------------------- */
 .section_8_bg {
-  background: linear-gradient(182.58deg,
-      rgba(37, 99, 235, 0.054) -61.86%,
-      rgba(0, 151, 178, 0.054) 98.06%);
+  background: linear-gradient(
+    182.58deg,
+    rgba(37, 99, 235, 0.054) -61.86%,
+    rgba(0, 151, 178, 0.054) 98.06%
+  );
   padding: 70px 0;
 }
 
@@ -1273,7 +1285,6 @@ body {
 
 /* Responsive layout - make the columns stack on top of each other instead of next to each other */
 @media (max-width: 400px) {
-
   .side,
   .middle {
     width: 100%;
@@ -1525,8 +1536,8 @@ body {
   border: 2px solid transparent;
 }
 
-.form .group input:placeholder-shown+label,
-.form .group textarea:placeholder-shown+label {
+.form .group input:placeholder-shown + label,
+.form .group textarea:placeholder-shown + label {
   top: 10px;
   background-color: transparent;
   padding: 4px;
@@ -1537,8 +1548,8 @@ body {
   border-color: #3366cc;
 }
 
-.form .group input:focus+label,
-.form .group textarea:focus+label {
+.form .group input:focus + label,
+.form .group textarea:focus + label {
   top: -10px;
   left: 10px;
   background-color: #fff;
@@ -1663,14 +1674,11 @@ body {
   width: 30px;
 }
 
-
 .star_clr {
   color: #ffc700;
 }
 
 /* #############################Animation############################### */
-
-
 
 .header {
   opacity: 0;
