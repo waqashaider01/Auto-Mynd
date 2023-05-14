@@ -810,6 +810,7 @@ body {
   border: 3px solid transparent !important;
   background-color: var(--color_7);
   cursor: pointer;
+  transition: 1s ease-in-out;
 }
 
 .industry__card:hover {
