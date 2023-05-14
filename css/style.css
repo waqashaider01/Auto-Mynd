@@ -711,6 +711,80 @@ body {
   }
 }
 
+@media only screen and (max-width: 476px) {
+  .section_1_right_div .img1 {
+    position: absolute;
+    width: 30%;
+    height: 50%;
+    top: -27px;
+    left: 55px;
+    object-fit: contain;
+  }
+
+  .section_1_right_div .img2 {
+    position: absolute;
+    width: 30%;
+    height: 50%;
+    top: -29px;
+    left: 168px;
+    object-fit: contain;
+  }
+
+  .section_1_right_div .img3 {
+    position: absolute;
+    width: 30%;
+    height: 50%;
+    top: 59px;
+    left: 15px;
+    object-fit: contain;
+  }
+
+  .section_1_right_div .img4 {
+    position: absolute;
+    width: 30%;
+    height: 50%;
+    top: 59px;
+    left: 119px;
+    object-fit: contain;
+  }
+
+  .section_1_right_div .img5 {
+    position: absolute;
+    width: 30%;
+    height: 50%;
+    top: 60px;
+    left: 221px;
+    object-fit: contain;
+  }
+
+  .section_1_right_div .img6 {
+    position: absolute;
+    width: 30%;
+    height: 50%;
+    top: 143px;
+    left: 55px;
+    object-fit: contain;
+  }
+
+  .section_1_right_div .img7 {
+    position: absolute;
+    width: 30%;
+    height: 50%;
+    top: 143px;
+    left: 168px;
+    object-fit: contain;
+  }
+
+  .section_1_right_div .img8 {
+    position: absolute;
+    width: 30%;
+    height: 50%;
+    top: 232px;
+    left: 115px;
+    object-fit: contain;
+  }
+}
+
 /* ----------------------Section 2-Industries--------------------------- */
 
 .section_content {
@@ -899,16 +973,6 @@ body {
   --space: 2rem;
 }
 
-.marquee__group {
-  white-space: nowrap;
-  overflow-x: scroll;
-}
-
-.card {
-  flex: 0 0 auto;
-}
-
-
 .marquee {
   --duration: 60s;
   --gap: var(--space);
@@ -931,7 +995,7 @@ body {
 
 @media (prefers-reduced-motion: reduce) {
   .marquee__group {
-    animation-play-state: paused;
+    /* animation-play-state: paused; */
   }
 }
 
