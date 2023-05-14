@@ -859,7 +859,7 @@ body {
   border: none !important;
 }
 
-.mb-4rem{
+.mb-4rem {
   margin-bottom: 4rem;
 }
 
@@ -899,6 +899,16 @@ body {
   --space: 2rem;
 }
 
+.marquee__group {
+  white-space: nowrap;
+  overflow-x: scroll;
+}
+
+.card {
+  flex: 0 0 auto;
+}
+
+
 .marquee {
   --duration: 60s;
   --gap: var(--space);
@@ -906,6 +916,7 @@ body {
   overflow: hidden;
   user-select: none;
   gap: var(--gap);
+  touch-action: pan-y;
 }
 
 .marquee__group {
