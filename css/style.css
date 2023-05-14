@@ -120,12 +120,12 @@ body {
 
 @media only screen and (max-width: 450px) {
   .auto_mynd_logo {
-    width: 220px;
+    width: 270px;
   }
 }
 
 .auto_mynd_logo img {
-  width: 50%;
+  width: 60%;
 }
 
 /* ......Header Nqav Tabs..... */
@@ -1706,3 +1706,9 @@ body {
     transform: translateY(0);
   }
 }
+
+
+
+
+
+

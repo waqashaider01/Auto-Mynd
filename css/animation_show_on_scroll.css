@@ -7,7 +7,7 @@
             -moz-animation: fadeInRight .5s ease .4s both;
             -ms-animation: fadeInRight .5s ease .4s both;
             -o-animation: fadeInRight .5s ease .4s both;
-            animation: fadeInRight .5s ease .4s both;
+            animation: fadeInRight .8s ease .7s both;
         }
 
         @media (prefers-reduced-motion) {
@@ -24,7 +24,7 @@
             -moz-animation: fadeInLeft .5s ease .4s both;
             -ms-animation: fadeInLeft .5s ease .4s both;
             -o-animation: fadeInLeft .5s ease .4s both;
-            animation: fadeInLeft .5s ease .4s both;
+            animation: fadeInLeft .8s ease .7s both;
         }
 
         @media (prefers-reduced-motion) {
