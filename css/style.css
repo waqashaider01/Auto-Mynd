@@ -1159,13 +1159,13 @@ body {
 
 /* ------------------Section 7-What Makes Us Different----------------------- */
 .section_7_bg {
-  background: linear-gradient(
+  /* background: linear-gradient(
     182.58deg,
     rgba(37, 99, 235, 0.054) -61.86%,
     rgba(0, 151, 178, 0.054) 98.06%
   );
   border-radius: 120px;
-  padding: 70px 0;
+  padding: 70px 0; */
 }
 
 .section_7_img_right {
