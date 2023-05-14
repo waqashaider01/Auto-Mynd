@@ -24,5 +24,5 @@ function isElementInViewport(el) {
 if (window.addEventListener) {
   addEventListener("DOMContentLoaded", checkForVisibility, false);
   addEventListener("load", checkForVisibility, false);
-  addEventListener("scroll", checkForVisibility, false);
+  addEventListener("scroll", checkForVisibility, true);
 }
