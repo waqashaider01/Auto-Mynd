@@ -1401,6 +1401,9 @@ body {
 }
 
 .slider__card {
+}
+
+.slider__card {
   width: 100%;
   display: flex;
   justify-content: center;
