@@ -365,18 +365,12 @@ body {
   border-radius: 5px;
   background: var(--color_5) !important;
   color: var(--color_7);
-  -webkit-transition: background-color 0.3s, color 0.3s;
-  transition: background-color 0.3s, color 0.3s;
 }
 
 .section_1_button:hover {
-  -webkit-transition: background-color 0.1s 0.3s, color 0.1s 0.3s;
-  transition: background-color 0.1s 0.3s, color 0.1s 0.3s;
-  color: var(--color_5);
-  background: transparent !important;
+  color: var(--color_7) !important;
+  /* background: transparent; */
   border: 1px solid var(--color_5);
-  -webkit-animation: anim-moema-1 0.3s forwards;
-  animation: anim-moema-1 0.3s forwards;
 }
 
 .section_1_button {
