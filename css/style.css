@@ -1706,3 +1706,21 @@ body {
     transform: translateY(0);
   }
 }
+
+.over-hidden-block-wrapper {
+  overflow: hidden;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.custom-section.the-world-s-sec {
+  position: relative;
+  padding: 40px !important;
+  border-radius: 1.38889em;
+  background-color: #b2e0e8 !important;
+  filter: drop-shadow(0px 0px 10px rgba(0, 151, 178, 0.3));
+  background: linear-gradient(white, white) padding-box,
+    linear-gradient(to bottom, #92b0f1, #7ed3e2) border-box;
+  border-radius: 10px;
+  /* border: 2px solid transparent; */
+}
