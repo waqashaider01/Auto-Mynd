@@ -7,8 +7,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link href="https://global-uploads.webflow.com/5f365b4c10e0c3cfd4795777/css/element5.webflow.39d02f357.min.css"
-        rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="css/style2.css">
 
     <!-- Customized CSS -->
     <link rel="stylesheet" href="css/style.css">
@@ -1395,6 +1394,10 @@
 
         </div>
     </footer>
+
+    <!-- Back to top button -->
+    <a class="bottom_button" id="button"></a>
+
     <script src="js/event.js"></script>
 
     <!-- Animation Show elements on scroll -->
@@ -1415,6 +1418,24 @@
         crossorigin="anonymous"></script>
     <script src="https://global-uploads.webflow.com/5f365b4c10e0c3cfd4795777/js/webflow.44c0f9dfd.js"
         type="text/javascript"></script>
+
+    <script>
+        var btn = $("#button");
+
+        $(window).scroll(function () {
+            if ($(window).scrollTop() > 300) {
+                btn.addClass("show");
+            } else {
+                btn.removeClass("show");
+            }
+        });
+
+        btn.on("click", function (e) {
+            e.preventDefault();
+            $("html, body").animate({ scrollTop: 0 }, "300");
+        });
+
+    </script>
 </body>
 
 </html>
