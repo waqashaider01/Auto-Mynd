@@ -1136,7 +1136,7 @@ body {
   box-shadow: 7px 9px 19px rgba(0, 151, 178, 0.2);
   border-radius: 10px;
   /* border-radius: 10px; */
-  height: 230px;
+  height: 295px;
 }
 
 .section_6_card_body h3 {
@@ -1150,6 +1150,14 @@ body {
   font-size: 18px;
   line-height: 33px;
   color: var(--color_1);
+}
+
+.new__content {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 33px;
+  color: var(--color_1);
+  text-align: center;
 }
 
 /* ------------------Section 7-What Makes Us Different----------------------- */
@@ -1189,13 +1197,14 @@ body {
 
 .section_7_content h3 {
   font-weight: 700;
-  font-size: 30px;
-  line-height: 48px;
+  font-size: 25px;
+  /* line-height: 48px; */
 }
 
 .section_7_content p {
   font-weight: 400;
   font-size: 18px;
+  line-height: 30px;
 }
 
 /* ------------------Section 8-Ratings----------------------- */
